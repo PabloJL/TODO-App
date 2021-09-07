@@ -39,9 +39,8 @@
 .Icon-check {
   position: absolute;
   left: 10px;
-  top: 5px;
-  transform: rotate(180deg);
-  font-size: 40px;
+  top: 10px;
+  font-size: 30px;
 }
 .Icon-check--active {
   color: #4caf50;

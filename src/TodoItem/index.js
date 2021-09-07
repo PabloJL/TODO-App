@@ -1,6 +1,7 @@
 import React from "react";
 import "./TodoItem.css";
 import { TiDelete } from "react-icons/ti";
+import { FaCheckCircle } from "react-icons/fa";
 
 function TodoItem(props) {
   return (
@@ -9,7 +10,7 @@ function TodoItem(props) {
         className={`Icon Icon-check ${props.completed && "Icon-check--active"}`} //Si recibe una propiedad llamada completed y es true entonces se agrega --active
         onClick={!props.completed ? props.onComplete : props.unComplete}
       >
-        ᄼ
+        <FaCheckCircle />
       </span>
       <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
         {props.text}
